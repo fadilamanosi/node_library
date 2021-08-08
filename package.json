@@ -1,0 +1,18 @@
+{
+  "name": "node_library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^4.0.1",
+    "node-nats-streaming": "^0.3.2",
+    "typescript": "^4.3.5"
+  }
+}
