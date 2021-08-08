@@ -4,8 +4,8 @@
   "description": "",
   "main": "./build/index.js",
   "scripts": {
-    "clean": "del ./build/*",
-    "build": "tsc"
+    "clean": "rm -r ./build/",
+    "build": "npm run clean && tsc && git add . && git commit -m ."
   },
   "keywords": [],
   "author": "",
