@@ -5,7 +5,7 @@
   "main": "./build/index.js",
   "scripts": {
     "clean": "rm -r ./build/",
-    "build": "npm run clean && tsc && git add . && git commit -m ."
+    "build": "tsc && git add . && git commit -m ."
   },
   "keywords": [],
   "author": "",

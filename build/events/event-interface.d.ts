@@ -15,4 +15,12 @@ interface templateInterface {
         themeActivated: string;
     };
 }
-export { coreInterface, templateInterface };
+interface schoolCreatedInterface {
+    subject: subjects.schoolCreated;
+    data: {
+        school_id: string;
+        school_name: string;
+        school_slug: string;
+    };
+}
+export { coreInterface, templateInterface, schoolCreatedInterface };
