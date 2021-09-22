@@ -18,6 +18,6 @@ const decrypt = (hash) => {
     var hashed = JSON.parse(hash);
     const decipher = crypto.createDecipheriv(algorithm, secretKey, Buffer.from(hashed.iv, 'hex'));
     const decrpyted = Buffer.concat([decipher.update(Buffer.from(hashed.content, 'hex')), decipher.final()]);
-    return decrpyted;
+    return decrpyted.toString();
 };
 exports.decrypt = decrypt;
