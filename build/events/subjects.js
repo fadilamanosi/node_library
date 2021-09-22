@@ -5,5 +5,5 @@ var subjects;
 (function (subjects) {
     subjects["core"] = "core";
     subjects["schoolCreated"] = "school:created";
-    subjects["template"] = "template";
+    subjects["templateInit"] = "template:init";
 })(subjects = exports.subjects || (exports.subjects = {}));

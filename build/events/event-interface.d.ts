@@ -7,13 +7,9 @@ interface coreInterface {
         themeActivated: string;
     };
 }
-interface templateInterface {
-    subject: subjects.template;
-    data: {
-        id: string;
-        pageType: string;
-        themeActivated: string;
-    };
+interface templateInitInterface {
+    subject: subjects.templateInit;
+    data: {};
 }
 interface schoolCreatedInterface {
     subject: subjects.schoolCreated;
@@ -23,4 +19,4 @@ interface schoolCreatedInterface {
         school_slug: string;
     };
 }
-export { coreInterface, templateInterface, schoolCreatedInterface };
+export { coreInterface, templateInitInterface, schoolCreatedInterface };
